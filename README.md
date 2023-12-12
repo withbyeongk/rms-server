@@ -1,4 +1,5 @@
 # Server-Iron
 Iron's Server
 
-//커밋 테스트
+- 예약시스템 구축 문서
+https://github.com/nuts-playground/Server-Iron/blob/main/doc/rms-readme.txt
