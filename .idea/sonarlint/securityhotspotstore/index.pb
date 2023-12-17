@@ -1,6 +1,4 @@
 
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 q
 Asrc/main/java/com/np/iron/rms/slot/controller/SlotController.java,c\3\c3bb6fc8cf9e37be4af59d006f585bf81ef5fb8c
 o
@@ -13,9 +11,6 @@ A
 src/test/test.iml,d\7\d7a7839e847f2bbbecc3737724f1de3cb25cdb5c
 A
 src/main/main.iml,6\1\61b68408d9be329695c36f5e4e3ba9efeb3d663d
-:
-
-.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 t
 Dsrc/main/java/com/np/iron/rms/slot/repository/SlotJpaRepository.java,a\b\abcd76663053e5ca90f36c9e3a09a994d9819ec2
 q
@@ -76,3 +71,11 @@ Isrc/main/java/com/np/iron/rms/activity/repository/ActivityRepository.java,3\7\
 Psrc/main/java/com/np/iron/rms/activity/repository/ActivityMybatisRepository.java,a\a\aa90c901923d75dfdc59421c310be0bae9b9411c
 k
 ;src/main/java/com/np/iron/rms/slot/service/SlotService.java,b\3\b3175c41ee194b9d57f1899bb55087f0c3cd2285
+e
+5src/main/java/com/np/iron/rms/party/domain/Party.java,3\6\36eb0f138e75bad8ce5a843333d268870bf95765
+y
+Isrc/main/java/com/np/iron/rms/activity/controller/ActivityController.java,8\c\8c77f6bc5adea3a8b5ab7c7b726140670bc6246c
+c
+3src/main/java/com/np/iron/rms/slot/domain/Slot.java,5\f\5f0f757146fc89d4864579010f9bef30d741d266
+m
+=src/main/java/com/np/iron/rms/mybatis/mappers/UserMapper.java,2\0\20e4ac34419843f79138fad5f1c2e69416033ef9

@@ -25,9 +25,6 @@ public class Channel {
 	@Column(name = "channel_id")
 	private Long channelId;
 
-	@Column(name = "user_id")
-	private Long userId;
-
 	@Column(name = "channel_name")
 	private String channelName;
 
@@ -37,7 +34,7 @@ public class Channel {
 	@OneToMany(mappedBy = "channel")
 	List<Party> parties = new ArrayList<>();
 
-	@OneToMany(mappedBy = "activity")
+	@OneToMany(mappedBy = "channel")
 	List<Activity> activities = new ArrayList<>();
 
 	@ManyToOne(fetch = FetchType.LAZY)
