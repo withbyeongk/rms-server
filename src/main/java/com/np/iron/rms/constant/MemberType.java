@@ -1,4 +1,4 @@
-package com.np.iron.rms.member.domain;
+package com.np.iron.rms.constant;
 
 public enum MemberType {
 	ADMIN, MASTER, MEMBER, BOTH

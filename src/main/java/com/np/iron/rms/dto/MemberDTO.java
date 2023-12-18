@@ -1,5 +1,7 @@
-package com.np.iron.rms.member.domain;
+package com.np.iron.rms.dto;
 
+import com.np.iron.rms.constant.MemberType;
+import com.np.iron.rms.member.domain.Member;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;

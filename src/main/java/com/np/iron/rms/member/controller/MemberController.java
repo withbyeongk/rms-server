@@ -1,7 +1,7 @@
 package com.np.iron.rms.member.controller;
 
 import com.np.iron.rms.member.domain.Member;
-import com.np.iron.rms.member.domain.MemberDTO;
+import com.np.iron.rms.dto.MemberDTO;
 import com.np.iron.rms.member.service.MemberService;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.Operation;
@@ -31,7 +31,7 @@ public class MemberController {
 			@ApiResponse(responseCode = "501", description = "API EXCEPTION")
 	})
 	@RequestMapping("/add")
-	public String addUser(@Valid @ModelAttribute("member") MemberDTO memberDTO, BindingResult bindingResult) {
+	public String addMember(@Valid @ModelAttribute("member") MemberDTO memberDTO, BindingResult bindingResult) {
 		if (bindingResult.hasErrors()) {
 			return "error";
 		}
