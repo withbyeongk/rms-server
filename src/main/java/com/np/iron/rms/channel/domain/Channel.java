@@ -1,6 +1,7 @@
 package com.np.iron.rms.channel.domain;
 
 import com.np.iron.rms.activity.domain.Activity;
+import com.np.iron.rms.constant.ApprovalState;
 import com.np.iron.rms.party.domain.Party;
 import com.np.iron.rms.member.domain.Member;
 import jakarta.persistence.*;

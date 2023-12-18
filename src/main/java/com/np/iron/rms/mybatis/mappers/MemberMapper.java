@@ -1,7 +1,7 @@
 package com.np.iron.rms.mybatis.mappers;
 
 import com.np.iron.rms.member.domain.Member;
-import com.np.iron.rms.member.domain.MemberDTO;
+import com.np.iron.rms.dto.MemberDTO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

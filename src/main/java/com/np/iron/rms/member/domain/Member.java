@@ -1,5 +1,6 @@
 package com.np.iron.rms.member.domain;
 
+import com.np.iron.rms.constant.MemberType;
 import com.np.iron.rms.party.domain.Party;
 import com.np.iron.rms.reservation.domain.Reservation;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -7,7 +8,6 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
