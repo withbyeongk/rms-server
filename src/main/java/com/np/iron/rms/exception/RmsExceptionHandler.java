@@ -2,7 +2,7 @@ package com.np.iron.rms.exception;
 
 import com.np.iron.rms.dto.ResponseDTO;
 import jakarta.servlet.http.HttpServletRequest;
-import org.springframework.boot.configurationprocessor.json.JSONException;
+import org.json.JSONException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
