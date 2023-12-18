@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: rms
+  profiles:
+    active: local
   cloud:
     config:
       uri: http://localhost:8080
