@@ -25,7 +25,12 @@ public class MemberDTO {
 	@NotEmpty(message = "비밀번호는 필수 입니다.")
 	private String memberPw;
 
-	@NotEmpty(message = "사용자 유형은 필수 입니다.")
+//	@NotEmpty(message = "사용자 유형은 필수 입니다.")
 	private MemberType memberType;
+
+	public Member toEntity() {
+		return new Member(memberName, memberPw, phone, memberType);
+	}
+
 
 }
