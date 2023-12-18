@@ -12,3 +12,11 @@ spring:
     loadbalancer:
       ribbon:
         enabled: false
+    refresh:
+      extra-refreshable: com.zaxxer.hikari.HikariDataSource
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans
