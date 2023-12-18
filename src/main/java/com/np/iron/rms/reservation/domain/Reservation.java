@@ -11,6 +11,7 @@ import lombok.ToString;
 import java.time.LocalDateTime;
 
 @Entity
+@Table(name = "TB_RESERVATION")
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @ToString

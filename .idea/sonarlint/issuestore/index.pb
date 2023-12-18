@@ -67,15 +67,9 @@ q
 Asrc/test/java/com/np/iron/user/controller/UserControllerTest.java,2\5\25990c6eda71cc2719f7bbeaa1aa8ff201306ae9
 t
 Dsrc/main/java/com/np/iron/rms/user/repository/UserJpaRepository.java,d\b\dbea96ad950157ee1412a4051776f726ce86649d
-k
-;src/main/java/com/np/iron/rms/user/service/UserService.java,3\1\31ba09ea732adfe913ef026b795a324fb1298569
 g
 7src/main/java/com/np/iron/rms/user/domain/UserType.java,8\e\8e755e30345453f4c05d63bb62220b0e4e3e85e4
 y
 Isrc/main/java/com/np/iron/rms/activity/controller/ActivityController.java,8\c\8c77f6bc5adea3a8b5ab7c7b726140670bc6246c
-c
-3src/main/java/com/np/iron/rms/slot/domain/Slot.java,5\f\5f0f757146fc89d4864579010f9bef30d741d266
-e
-5src/main/java/com/np/iron/rms/party/domain/Party.java,3\6\36eb0f138e75bad8ce5a843333d268870bf95765
 m
 =src/main/java/com/np/iron/rms/mybatis/mappers/UserMapper.java,2\0\20e4ac34419843f79138fad5f1c2e69416033ef9

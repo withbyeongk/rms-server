@@ -1,9 +1,7 @@
 package com.np.iron.rms.member.controller;
 
 import com.np.iron.rms.member.domain.MemberDTO;
-import com.np.iron.rms.member.repository.MemberMybatisRepository;
 import com.np.iron.rms.member.service.MemberService;
-import com.np.iron.rms.member.service.MemberServiceImpl;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.BindingResult;
