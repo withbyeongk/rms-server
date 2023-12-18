@@ -1,4 +1,4 @@
-package com.np.iron.user.controller;
+package com.np.iron.member.controller;
 
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import jakarta.persistence.EntityManager;
@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @SpringBootTest
 @Transactional
-public class UserControllerTest {
+public class MemberControllerTest {
 
 	@PersistenceContext
 	EntityManager em;

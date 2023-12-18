@@ -34,8 +34,8 @@ public class Activity {
 	@Column(name = "contents")
 	private String contents;
 
-	@Column(name = "minute")
-	private int minute;
+	@Column(name = "activity_min")
+	private int activityMin;
 
 	@OneToMany(mappedBy = "activity")
 	List<Slot> slots = new ArrayList<>();

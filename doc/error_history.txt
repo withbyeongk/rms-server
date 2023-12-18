@@ -1,0 +1,14 @@
+[Error]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: org.h2.Driver
+-> DB를 변경하는 과정에서 실수로 build.gradle을 수정하지 않아서 생긴 문제.
+-> 사용하려는 h2 설정을 하하여 해결
+
+[Error]
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table reservation (\000d\000a        created_time timestamp(6),\000d\000a        reservation_id bigint not null,\000d\000a        slot bigint,\000d\000a        [*]member bigint,\000d\000a        primary key (reservation_id)\000d\000a    )"; expected "identifier"; SQL statement:
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    create table tb_activity (\000d\000a        [*]minute integer,\000d\000a        activity_id bigint not null,\000d\000a        channel_id bigint,\000d\000a        created_time timestamp(6),\000d\000a        activity_name varchar(255),\000d\000a        contents varchar(255),\000d\000a        primary key (activity_id)\000d\000a    )"; expected "identifier"; SQL statement:
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000d\000a    alter table if exists reservation \000d\000a       add constraint FK6todnh294w5ig6dw0vanhup9g \000d\000a       foreign key ([*]member) \000d\000a       references tb_user"; expected "identifier"; SQL statement:
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TB_ACTIVITY" not found; SQL statement:
+-> Entity 설정 시 예약어를 사용해서 생긴 문제
+-> member, password와 같은 예약어를 피하여 해결
+
+

@@ -2,7 +2,7 @@ package com.np.iron.rms.channel.domain;
 
 import com.np.iron.rms.activity.domain.Activity;
 import com.np.iron.rms.party.domain.Party;
-import com.np.iron.rms.user.domain.User;
+import com.np.iron.rms.member.domain.Member;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -25,9 +25,6 @@ public class Channel {
 	@Column(name = "channel_id")
 	private Long channelId;
 
-	@Column(name = "user_id")
-	private Long userId;
-
 	@Column(name = "channel_name")
 	private String channelName;
 
@@ -37,12 +34,12 @@ public class Channel {
 	@OneToMany(mappedBy = "channel")
 	List<Party> parties = new ArrayList<>();
 
-	@OneToMany(mappedBy = "activity")
+	@OneToMany(mappedBy = "channel")
 	List<Activity> activities = new ArrayList<>();
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "user_id")
-	private User user;
+	private Member member;
 
 	@Enumerated
 	@Column(name = "approval_state")
