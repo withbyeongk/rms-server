@@ -1,0 +1,12 @@
+server:
+  port: 5000
+
+spring:
+  application:
+    name: rms
+  cloud:
+    config:
+      uri: http://localhost:8080
+    loadbalancer:
+      ribbon:
+        enabled: false

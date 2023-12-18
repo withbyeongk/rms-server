@@ -15,8 +15,6 @@ s
 Csrc/main/java/com/np/iron/rms/activity/service/ActivityService.java,2\a\2ad8f699ae31aeb70f340b353925458df9654b84
 w
 Gsrc/main/java/com/np/iron/rms/activity/service/ActivityServiceImpl.java,7\c\7cd64889ae3e49eb01c93bdee651076dad7ee7cd
-o
-?src/main/java/com/np/iron/rms/channel/domain/ApprovalState.java,f\a\fac527cc8372f66f7426b1f1a90aeee7c7eaa681
 w
 Gsrc/main/java/com/np/iron/rms/channel/controller/ChannelController.java,8\d\8d8eddb81e27aa4ae2e5937e0e830701dbc3d910
 z
@@ -59,3 +57,17 @@ o
 ?src/main/java/com/np/iron/rms/slot/service/SlotServiceImpl.java,f\f\ffcf71f42dea39b35779ee71b5bb267565a76667
 y
 Isrc/main/java/com/np/iron/rms/activity/controller/ActivityController.java,8\c\8c77f6bc5adea3a8b5ab7c7b726140670bc6246c
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+b
+2src/main/java/com/np/iron/rms/dto/ResponseDTO.java,5\7\57a40d10fcf1447985f2895c4ac9e42fe1d48091
+i
+9src/main/java/com/np/iron/rms/channel/domain/Channel.java,8\9\8993d996a0401a232d22f10e022ceb8b39dd7c4e
+g
+7src/main/java/com/np/iron/rms/member/domain/Member.java,c\5\c5c8fb06494d1b91a660555e1763f3a1fc27f005
+u
+Esrc/test/java/com/np/iron/member/controller/MemberControllerTest.java,2\0\2042b6442a48578f2ae00fb4be24deb05e25489d
+o
+?src/main/java/com/np/iron/rms/mybatis/mappers/MemberMapper.java,8\6\860a4d2a63376c9f2e185ea8bff9c2236dca768d
+f
+6src/main/java/com/np/iron/rms/constant/MemberType.java,3\4\34e4243b9b9aa06e78135af7a82ec316fc53edcf
