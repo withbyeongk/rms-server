@@ -2,7 +2,7 @@ package com.np.iron.rms.channel.domain;
 
 import com.np.iron.rms.activity.domain.Activity;
 import com.np.iron.rms.party.domain.Party;
-import com.np.iron.rms.user.domain.User;
+import com.np.iron.rms.member.domain.Member;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -39,7 +39,7 @@ public class Channel {
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "user_id")
-	private User user;
+	private Member member;
 
 	@Enumerated
 	@Column(name = "approval_state")

@@ -1,7 +1,7 @@
 package com.np.iron.rms.reservation.domain;
 
+import com.np.iron.rms.member.domain.Member;
 import com.np.iron.rms.slot.domain.Slot;
-import com.np.iron.rms.user.domain.User;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -11,6 +11,7 @@ import lombok.ToString;
 import java.time.LocalDateTime;
 
 @Entity
+@Table(name = "TB_RESERVATION")
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @ToString
@@ -26,8 +27,8 @@ public class Reservation {
 	private Slot slot;
 
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "user")
-	private User user;
+	@JoinColumn(name = "member_id")
+	private Member member;
 
 	@Column(name = "created_time")
 	private LocalDateTime createdTime;

@@ -1,7 +1,7 @@
-package com.np.iron.rms.user.controller;
+package com.np.iron.rms.member.controller;
 
-import com.np.iron.rms.user.domain.UserDTO;
-import com.np.iron.rms.user.service.UserService;
+import com.np.iron.rms.member.domain.MemberDTO;
+import com.np.iron.rms.member.service.MemberService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.validation.BindingResult;
@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/user")
 @RequiredArgsConstructor
-public class UserController {
+public class MemberController {
 
-	private final UserService userService;
+	private final MemberService memberService;
 
 	@RequestMapping("/add")
-	public String addUser(@Valid @ModelAttribute("user") UserDTO userDTO, BindingResult bindingResult) {
+	public String addUser(@Valid @ModelAttribute("member") MemberDTO memberDTO, BindingResult bindingResult) {
 		if (bindingResult.hasErrors()) {
 			return "error";
 		}

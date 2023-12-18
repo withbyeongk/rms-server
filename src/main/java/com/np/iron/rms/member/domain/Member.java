@@ -1,4 +1,4 @@
-package com.np.iron.rms.user.domain;
+package com.np.iron.rms.member.domain;
 
 import com.np.iron.rms.party.domain.Party;
 import com.np.iron.rms.reservation.domain.Reservation;
@@ -13,38 +13,38 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "TB_USER")
+@Table(name = "TB_MEMBER")
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)	// 기본생성자는 막고 싶을 때, JPA 스펙상 PROTECTED는 열어둬야할 때 사용
-@ToString(of = {"userId", "userName", "phone", "userType", "createdTime"})
+@ToString(of = {"memberId", "memberName", "phone", "memberType", "createdTime"})
 @EnableJpaAuditing
 @EntityListeners(AuditingEntityListener.class)
-public class User {
+public class Member {
 
 	@Id
 	@GeneratedValue
-	@Column(name = "user_id")
-	private Long userId;
+	@Column(name = "member_id")
+	private Long memberId;
 
-	@Column(name = "user_name")
-	private String userName;
+	@Column(name = "member_name")
+	private String memberName;
 
 	@Column(name = "phone")
 	private String phone;
 
-	@Column(name = "userPw")
-	private String userPw;
+	@Column(name = "memberPw")
+	private String memberPw;
 
-	@OneToMany(mappedBy = "user")
+	@OneToMany(mappedBy = "member")
 	List<Party> parties = new ArrayList<>();
 
-	@OneToMany(mappedBy = "user")
+	@OneToMany(mappedBy = "member")
 	List<Reservation> reservations = new ArrayList<>();
 
 	@Enumerated(EnumType.STRING)
-	@Column(name = "user_type")
-	private UserType userType;        // ADMIN(관리자), MASTER(채널주인), MEMBER(일반회원), BOTH(채널주인+일반회원)
+	@Column(name = "member_type")
+	private MemberType memberType;        // ADMIN(관리자), MASTER(채널주인), MEMBER(일반회원), BOTH(채널주인+일반회원)
 
 	@CreatedDate
 	@Column(name = "created_time")

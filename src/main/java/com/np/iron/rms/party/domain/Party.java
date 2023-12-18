@@ -1,7 +1,7 @@
 package com.np.iron.rms.party.domain;
 
 import com.np.iron.rms.channel.domain.Channel;
-import com.np.iron.rms.user.domain.User;
+import com.np.iron.rms.member.domain.Member;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -23,8 +23,8 @@ public class Party {
 	private Long partyId;
 
 	@ManyToOne
-	@JoinColumn(name = "user_id")
-	private User user;
+	@JoinColumn(name = "member_id")
+	private Member member;
 
 	@ManyToOne
 	@JoinColumn(name = "channel_id")
