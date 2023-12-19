@@ -1,6 +1,4 @@
 
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 b
 2src/main/java/com/np/iron/rms/dto/ResponseDTO.java,5\7\57a40d10fcf1447985f2895c4ac9e42fe1d48091
 o
@@ -13,3 +11,9 @@ u
 Esrc/test/java/com/np/iron/member/controller/MemberControllerTest.java,2\0\2042b6442a48578f2ae00fb4be24deb05e25489d
 g
 7src/main/java/com/np/iron/rms/member/domain/Member.java,c\5\c5c8fb06494d1b91a660555e1763f3a1fc27f005
+u
+Esrc/main/java/com/np/iron/rms/member/controller/MemberController.java,7\4\744749cf54929bc6f7ca9d8801ac3fd4e0cfa97f
+q
+Asrc/main/java/com/np/iron/rms/reservation/domain/Reservation.java,9\5\9552e3dd6342bbbad74f49816b18b80f5e66cc38
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
