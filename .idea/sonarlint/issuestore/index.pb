@@ -57,8 +57,6 @@ o
 ?src/main/java/com/np/iron/rms/slot/service/SlotServiceImpl.java,f\f\ffcf71f42dea39b35779ee71b5bb267565a76667
 y
 Isrc/main/java/com/np/iron/rms/activity/controller/ActivityController.java,8\c\8c77f6bc5adea3a8b5ab7c7b726140670bc6246c
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 b
 2src/main/java/com/np/iron/rms/dto/ResponseDTO.java,5\7\57a40d10fcf1447985f2895c4ac9e42fe1d48091
 i
