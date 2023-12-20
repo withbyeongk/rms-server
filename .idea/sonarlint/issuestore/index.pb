@@ -69,3 +69,9 @@ o
 ?src/main/java/com/np/iron/rms/mybatis/mappers/MemberMapper.java,8\6\860a4d2a63376c9f2e185ea8bff9c2236dca768d
 f
 6src/main/java/com/np/iron/rms/constant/MemberType.java,3\4\34e4243b9b9aa06e78135af7a82ec316fc53edcf
+u
+Esrc/main/java/com/np/iron/rms/member/controller/MemberController.java,7\4\744749cf54929bc6f7ca9d8801ac3fd4e0cfa97f
+q
+Asrc/main/java/com/np/iron/rms/reservation/domain/Reservation.java,9\5\9552e3dd6342bbbad74f49816b18b80f5e66cc38
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
