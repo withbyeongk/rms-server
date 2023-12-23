@@ -21,5 +21,16 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TB_ACTIVITY" not foun
   "error": "Not Found",
   "path": "/rms/member/add"
 }
+-> spring.cloud.gateway 라이브러리 변경 -> 자동으로 gateway-mvc 로 추가되는것을 gateway로 변경하고
+ eureka 서버의 client가 되는 gateway-server와 rms 의 Application class에 어노테이션 추가(@EnableDiscoveryClient)
 
-->
+[Error]
+오류 상황 :
+    (위 오류를 찾던 중)도커 컨테이너로 서버를 띄우지 않았음에도 eureka에 등록되는 instance_id에 'docker.internal'이 붙는 현상
+-> Docker DeskTop 을 설치하면 hosts 파일이 변경되어서 그런것.
+    `C:\Windows\System32\drivers\etc\hosts` 파일에서 설정된 것들을 주석처리하니 instance_id에서 docker.internal이 사라짐
+
+[Error]
+D:\study-workspace\springBoot-workspace\gateway-server\src\main\java\com\iron\gatewayserver\filter\LoggingFilter.java:94: error: cannot find symbol
+-> 롬복 오류
+build.gradle 파일에 롬복관련 설정 추가
