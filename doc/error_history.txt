@@ -11,4 +11,15 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "TB_ACTIVITY" not foun
 -> Entity 설정 시 예약어를 사용해서 생긴 문제
 -> member, password와 같은 예약어를 피하여 해결
 
+[Error]
+오류 상황 :
+    gateway-server를 세팅하고 spring.cloud.gateway.routes에서 predicates 속성으로 rms로 들어오는 요청에 대한 처리를 하도록 설정했다.
+    직접 application(rms) 서버에 요청하면 제대로 동작하는데 gateway를 통하면 404가 뜬다.
+{
+  "timestamp": "2023-12-19T15:36:45.720+00:00",
+  "status": 404,
+  "error": "Not Found",
+  "path": "/rms/member/add"
+}
 
+->

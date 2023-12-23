@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @OpenAPIDefinition(info = @Info(title = "회원관련 요청 API", description = "회원관련 요청 API", version = "v1"))
 @RestController
-@RequestMapping("/member")
+@RequestMapping("/rms/member")
 @RequiredArgsConstructor
 public class MemberController {
 
