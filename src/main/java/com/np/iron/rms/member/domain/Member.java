@@ -16,6 +16,7 @@ import java.util.List;
 @Entity
 @Table(name = "TB_MEMBER")
 @Getter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)	// 기본생성자는 막고 싶을 때, JPA 스펙상 PROTECTED는 열어둬야할 때 사용
 @ToString(of = {"memberId", "memberName", "phone", "memberType", "createdTime"})
