@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.np.iron.rms.mybatis.mappers.MemberMapper">
+<mapper namespace="com.iron.rms.mybatis.mappers.MemberMapper">
 
-    <resultMap id="memberResultMap" type="com.np.iron.rms.member.domain.Member">
+    <resultMap id="memberResultMap" type="com.iron.rms.member.domain.Member">
         <id property="memberId" column="MEMBER_ID"/>
         <result property="memberPw" column="MEMBER_PW"/>
         <result property="memberName" column="MEMBER_NAME"/>
